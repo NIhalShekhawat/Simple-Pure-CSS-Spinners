@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Css Spinners</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+  <div class="main">
+        <h1>Hello</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad, ullam ipsa atque labore nulla id explicabo quisquam asperiores veniam vel nihil eos optio ut consequuntur quis aliquid, harum tenetur recusandae consectetur nisi obcaecati quasi iure. Beatae facere molestiae nam quae reprehenderit reiciendis minus veritatis. Doloribus illum laborum iure placeat assumenda!</p>
+  </div>
+   
+     <script>
+         document.querySelector('.main p').style.display = 'none';
+         
+         document.querySelector('.main').classList.add('spinner-1');
+         
+         //Mimic loding
+         
+         setTimeout(function () {
+             document.querySelector('.main').classList.remove('spinner-1');
+             document.querySelector('.main p').style.display = 'block';
+         
+             }, 3000)
+        
+    
+     </script>
+      
+</body>
+</html>
